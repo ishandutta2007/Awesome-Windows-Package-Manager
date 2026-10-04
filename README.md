@@ -2,9 +2,7 @@
 
 ![Awesome Windows Package Manager Banner](./assets/banner.svg)
 
-[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Windows-Package-Manager)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Windows](https://img.shields.io/badge/OS-Windows%2010%20%7C%2011%20%7C%20Server-0078D6?logo=windows)](https://microsoft.com/windows)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.oo/badge/Discord-5865F2?style=for-the-badge&logo=discord&logColor=white" alt="Discord" /></a> [![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Windows-Package-Manager) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Windows](https://img.shields.io/badge/OS-Windows%2010%20%7C%2011%20%7C%20Server-0078D6?logo=windows)](https://microsoft.com/windows) <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 A curated list of top **Windows Package Managers**, **SaaS Software Deployment Platforms**, **Enterprise Patch Management Systems**, and **Open-Source GUI Tools**. Automate software discovery, silent installations, app updates, and dev environment provisioning across Windows desktop and server infrastructure.
 
@@ -18,6 +16,8 @@ A curated list of top **Windows Package Managers**, **SaaS Software Deployment P
 - [💻 Open-Source Package Managers & Tools](#-open-source-package-managers--tools)
 - [💡 Architectural Comparison & Guidance](#-architectural-comparison--guidance)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🌟 Star History](#-star-history)
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
 ---
@@ -112,6 +112,23 @@ Contributions are highly appreciated! To submit a new tool, SaaS platform, or op
 2. 📝 **Edit** `README.md` to add your item in the appropriate section.
 3. ⭐ Ensure open-source projects include their official GitHub repository link and star badge format.
 4. 🚀 **Open a Pull Request** with a concise description of the addition.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for exploring and contributing to this curated repository! If you found this list helpful, please consider supporting the project:
+
+- ⭐ **Star** this repository on GitHub to increase its visibility.
+- 🍴 **Fork** and contribute new package tools, SaaS platforms, or framework guides.
+- 📢 **Share** this list with fellow Windows sysadmins, DevOps engineers, and developers.
+- ☕ **Buy a coffee / Sponsor**: Support ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🌟 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Windows-Package-Manager&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Windows-Package-Manager&type=date&legend=top-left)
 
 ---
 
