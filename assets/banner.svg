@@ -13,14 +13,9 @@
       <stop offset="100%" stop-color="#818cf8"/>
     </linearGradient>
 
-    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
-    </linearGradient>
-
     <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#334155" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.7"/>
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.9"/>
     </linearGradient>
 
     <!-- Filters for Glow and Shadows -->
@@ -33,20 +28,19 @@
     </filter>
 
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
     </filter>
   </defs>
 
   <style>
-    /* CSS Animations for Dynamic Background & Visuals */
     @keyframes pulse-orb {
-      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.4; }
-      50% { transform: scale(1.15) translate(-15px, 10px); opacity: 0.7; }
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.1) translate(-10px, 8px); opacity: 0.6; }
     }
 
     @keyframes float-card {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
+      50% { transform: translateY(-6px); }
     }
 
     @keyframes flow-line {
@@ -54,47 +48,40 @@
       100% { stroke-dashoffset: 0; }
     }
 
-    @keyframes spin-gear {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .bg-orb-1 { animation: pulse-orb 8s ease-in-out infinite; transform-origin: 200px 100px; }
-    .bg-orb-2 { animation: pulse-orb 10s ease-in-out infinite 2s; transform-origin: 1000px 280px; }
+    .bg-orb-1 { animation: pulse-orb 8s ease-in-out infinite; transform-origin: 150px 80px; }
+    .bg-orb-2 { animation: pulse-orb 10s ease-in-out infinite 2s; transform-origin: 1050px 280px; }
     .floating-node-1 { animation: float-card 5s ease-in-out infinite; }
     .floating-node-2 { animation: float-card 6s ease-in-out infinite 1.5s; }
     .floating-node-3 { animation: float-card 5.5s ease-in-out infinite 0.7s; }
     .animated-wire { stroke-dasharray: 12 12; animation: flow-line 15s linear infinite; }
-    .rotating-icon { transform-origin: center; animation: spin-gear 20s linear infinite; }
 
-    .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #ffffff; }
-    .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #94a3b8; }
-    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; fill: #38bdf8; font-size: 13px; }
-    .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; fill: #e2e8f0; font-size: 14px; }
-    .card-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; fill: #94a3b8; font-size: 11px; }
+    .title-text { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; fill: #ffffff; }
+    .subtitle-text { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 500; fill: #94a3b8; }
+    .badge-text { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 600; fill: #38bdf8; font-size: 13px; }
+    .card-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; fill: #e2e8f0; font-size: 14px; }
+    .card-sub { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 400; fill: #94a3b8; font-size: 11px; }
   </style>
 
   <!-- Canvas Background -->
   <rect width="1200" height="360" rx="16" fill="url(#bg-grad)"/>
 
-  <!-- Dynamic Glowing Orbs in Background (Does not overlap text) -->
-  <circle class="bg-orb-1" cx="150" cy="80" r="180" fill="#0284c7" opacity="0.25" filter="url(#glow)"/>
-  <circle class="bg-orb-2" cx="1050" cy="280" r="200" fill="#6366f1" opacity="0.2" filter="url(#glow)"/>
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle class="bg-orb-1" cx="150" cy="80" r="180" fill="#0284c7" opacity="0.3" filter="url(#glow)"/>
+  <circle class="bg-orb-2" cx="1050" cy="280" r="200" fill="#6366f1" opacity="0.25" filter="url(#glow)"/>
 
-  <!-- Dynamic Decorative Grid Lines -->
+  <!-- Dynamic Grid Overlay -->
   <path d="M 0,90 L 1200,90 M 0,180 L 1200,180 M 0,270 L 1200,270" stroke="#334155" stroke-opacity="0.3" stroke-width="1"/>
   <path d="M 300,0 L 300,360 M 600,0 L 600,360 M 900,0 L 900,360" stroke="#334155" stroke-opacity="0.3" stroke-width="1"/>
 
-  <!-- Dynamic Connected Flow Lines (Behind text) -->
+  <!-- Animated Connection Line -->
   <path class="animated-wire" d="M 100,300 C 300,340 500,280 700,320 T 1100,290" fill="none" stroke="url(#primary-glow)" stroke-width="2" opacity="0.6"/>
 
-  <!-- Right Side Visual Elements (Animated Package Architecture Cards) -->
+  <!-- Right Side Visual Cards -->
   <g filter="url(#shadow)">
     <!-- Package Card 1: WinGet -->
     <g class="floating-node-1" transform="translate(860, 50)">
       <rect width="260" height="70" rx="12" fill="url(#card-grad)" stroke="#475569" stroke-width="1.5"/>
-      <rect x="15" y="15" width="40" height="40" rx="8" fill="#0284c7" opacity="0.8"/>
-      <!-- Windows logo icon -->
+      <rect x="15" y="15" width="40" height="40" rx="8" fill="#0284c7" opacity="0.9"/>
       <path d="M 27 25 L 34 24 L 34 33 L 27 33 Z M 36 23.7 L 45 22 L 45 33 L 36 33 Z M 27 35 L 34 35 L 34 44 L 27 43 Z M 36 35 L 45 35 L 45 46 L 36 44.3 Z" fill="#ffffff"/>
       <text x="68" y="35" class="card-title">winget-cli</text>
       <text x="68" y="52" class="card-sub">Official Windows Package Mgr</text>
@@ -104,8 +91,7 @@
     <!-- Package Card 2: UniGetUI -->
     <g class="floating-node-2" transform="translate(900, 145)">
       <rect width="260" height="70" rx="12" fill="url(#card-grad)" stroke="#6366f1" stroke-width="1.5"/>
-      <rect x="15" y="15" width="40" height="40" rx="8" fill="#4f46e5" opacity="0.8"/>
-      <!-- Package Manager UI Icon -->
+      <rect x="15" y="15" width="40" height="40" rx="8" fill="#4f46e5" opacity="0.9"/>
       <path d="M 27 23 h 16 a 2 2 0 0 1 2 2 v 18 a 2 2 0 0 1 -2 2 H 27 a 2 2 0 0 1 -2 -2 V 25 a 2 2 0 0 1 2 -2 z M 29 28 h 12 M 29 34 h 8" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
       <text x="68" y="35" class="card-title">UniGetUI</text>
       <text x="68" y="52" class="card-sub">Unified Multi-Package GUI</text>
@@ -115,8 +101,7 @@
     <!-- Package Card 3: Scoop & Choco -->
     <g class="floating-node-3" transform="translate(840, 240)">
       <rect width="260" height="70" rx="12" fill="url(#card-grad)" stroke="#475569" stroke-width="1.5"/>
-      <rect x="15" y="15" width="40" height="40" rx="8" fill="#059669" opacity="0.8"/>
-      <!-- Terminal Shell Icon -->
+      <rect x="15" y="15" width="40" height="40" rx="8" fill="#059669" opacity="0.9"/>
       <path d="M 26 27 L 33 33 L 26 39 M 35 39 L 43 39" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
       <text x="68" y="35" class="card-title">Scoop &amp; Chocolatey</text>
       <text x="68" y="52" class="card-sub">Developer &amp; Enterprise Tools</text>
@@ -124,21 +109,21 @@
     </g>
   </g>
 
-  <!-- Left Side Foreground Header (Title & Subtitle explicitly preserved in foreground) -->
+  <!-- Left Side Title & Subtitle -->
   <g transform="translate(70, 0)">
-    <!-- Pill Badge -->
+    <!-- Badge -->
     <g transform="translate(0, 65)">
-      <rect width="270" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6"/>
-      <circle cx="18" cy="15" r="5" fill="#38bdf8" class="rotating-icon"/>
+      <rect width="270" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.8"/>
+      <circle cx="18" cy="15" r="5" fill="#38bdf8"/>
       <text x="32" y="20" class="badge-text">WINDOWS AUTOMATION ECOSYSTEM</text>
     </g>
 
-    <!-- Main Title -->
-    <text x="0" y="155" class="title-text" font-size="44" filter="url(#shadow)">
+    <!-- Main Title (without text-shadow filter to prevent rendering artifacts) -->
+    <text x="0" y="155" class="title-text" font-size="44">
       Awesome Windows
     </text>
-    <text x="0" y="210" class="title-text" font-size="44" fill="url(#primary-glow)" filter="url(#shadow)">
-      Package Manager 🚀
+    <text x="0" y="210" class="title-text" font-size="44" fill="url(#primary-glow)">
+      Package Manager &#128640;
     </text>
 
     <!-- Subtitle -->
@@ -151,8 +136,8 @@
 
     <!-- Quick Stats Indicator -->
     <g transform="translate(0, 312)">
-      <text font-family="sans-serif" font-size="12" fill="#64748b" font-weight="600">
-        ⚡ UPDATED FOR 2026 • OPEN-SOURCE &amp; SAAS PLATFORMS
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b" font-weight="600">
+        &#9889; UPDATED FOR 2026 &#8226; OPEN-SOURCE &amp; SAAS PLATFORMS
       </text>
     </g>
   </g>
