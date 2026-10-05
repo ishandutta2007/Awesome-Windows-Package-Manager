@@ -47,9 +47,9 @@ Enterprise-grade hosted software deployment tools, third-party patch management 
 
 ## 💻 Open-Source Package Managers & Tools
 
-Active open-source projects providing command-line package installers, multi-repo GUI interfaces, and decentralized manifest engines. Ranked by community popularity (**GitHub Star Count**).
+Active open-source projects providing command-line package installers, multi-repo GUI interfaces, and decentralized manifest engines. Ranked by community popularity (**GitHub Stars_Count**).
 
-| Project Name 🚀 | Stars ⭐ | Primary Purpose & Features | Installation & Environment |
+| Project Name 🚀 | GitHub_Stars ⭐ | Primary Purpose & Features | Installation & Environment |
 | :--- | :---: | :--- | :--- |
 | **[winget-cli](https://github.com/microsoft/winget-cli)** 🪟 | [![Stars](https://img.shields.io/github/stars/microsoft/winget-cli?style=social&color=white)](https://github.com/microsoft/winget-cli/stargazers) | **Official Microsoft Windows Package Manager**. Built into Windows 10/11 & Server 2025. 8,000+ packages in community repo. | System-level / User-level CLI (`winget install`) |
 | **[UniGetUI](https://github.com/marticliment/UniGetUI)** 🎨 | [![Stars](https://img.shields.io/github/stars/marticliment/UniGetUI?style=social&color=white)](https://github.com/marticliment/UniGetUI/stargazers) | **Unified GUI Frontend** for winget, Chocolatey, Scoop, pip, npm, and .NET Tool. Features bulk updates, export/import & notifications. | Graphical WinUI 3 Desktop Application |
@@ -110,7 +110,7 @@ Contributions are highly appreciated! To submit a new tool, SaaS platform, or op
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Edit** `README.md` to add your item in the appropriate section.
-3. ⭐ Ensure open-source projects include their official GitHub repository link and star badge format.
+3. ⭐ Ensure open-source projects include their official GitHub repository link and Stars_Badge format.
 4. 🚀 **Open a Pull Request** with a concise description of the addition.
 
 ---
