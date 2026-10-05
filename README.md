@@ -47,7 +47,7 @@ Enterprise-grade hosted software deployment tools, third-party patch management 
 
 ## 💻 Open-Source Package Managers & Tools
 
-Active open-source projects providing command-line package installers, multi-repo GUI interfaces, and decentralized manifest engines. Ranked by community popularity (**GitHub Stars_Count**).
+Active open-source projects providing command-line package installers, multi-repo GUI interfaces, and decentralized manifest engines. Ranked by community popularity (**GitHub_Stars_Count**).
 
 | Project Name 🚀 | GitHub_Stars ⭐ | Primary Purpose & Features | Installation & Environment |
 | :--- | :---: | :--- | :--- |
